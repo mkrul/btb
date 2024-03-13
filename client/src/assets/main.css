@@ -579,6 +579,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -591,8 +595,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-3 {
@@ -649,6 +661,10 @@ video {
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.table-fixed {
+  table-layout: fixed;
 }
 
 .animate-searchInput {
@@ -858,6 +874,11 @@ video {
 .text-neutral-400 {
   --tw-text-opacity: 1;
   color: rgb(138 137 144 / var(--tw-text-opacity));
+}
+
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(112 111 118 / var(--tw-text-opacity));
 }
 
 .text-neutral-600 {

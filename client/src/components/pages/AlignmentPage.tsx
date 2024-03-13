@@ -1,21 +1,26 @@
-import { useEffect, useState } from "react";
-import { getUser, updateUser } from "../../redux/features/userSlice";
-import { useAppSelector, useAppDispatch } from "../../redux/hooks";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAppDispatch, useAppSelector } from "../../redux/store";
+import { updateUser } from "../../redux/actions/user";
+import { User } from "../../redux/slices/userSlice";
+import { RootState } from "../../redux/store";
 
 const AlignmentPage = () => {
   const dispatch = useAppDispatch();
-  const userState = useAppSelector((state) => state.userState);
   const [alignment, setAlignment] = useState("");
-
-  useEffect(() => {
-    dispatch(getUser());
-  }, [dispatch]);
+  const user: User | null = useAppSelector(
+    (state: RootState) => state.userData.user
+  );
 
   const handleSetAlignment = (value: string) => {
     setAlignment(value);
     displayNewAlignment(value);
-    dispatch(updateUser({ alignment: value }));
+    if (user) {
+      console.log("in AlignmentPage.tsx, user._id:", user._id);
+      console.log("in AlignmentPage.tsx, alignment:", value);
+      console.log("in AlignmentPage.tsx:", { alignment: value });
+      dispatch(updateUser(user._id, { alignment: value }));
+    }
   };
 
   const displayNewAlignment = (value: string) => {

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+
 import "../../assets/main.css";
 import "../../assets/homepage.css";
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
     <div className="antialiased bg-body text-body font-body">
       <section className="pt-8 py-12 md:py-24">

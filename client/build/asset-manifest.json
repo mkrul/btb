@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8140e946.css",
-    "main.js": "/static/js/main.23d35ee8.js",
+    "main.css": "/static/css/main.d628a761.css",
+    "main.js": "/static/js/main.eb82ddd3.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/pit-bull-01.jpg": "/static/media/pit-bull-01.72d7afcd6138e0025ed5.jpg",
+    "static/media/pit-bull-02.jpg": "/static/media/pit-bull-02.2c26fa54edfcbf72bf70.jpg",
     "index.html": "/index.html",
-    "main.8140e946.css.map": "/static/css/main.8140e946.css.map",
-    "main.23d35ee8.js.map": "/static/js/main.23d35ee8.js.map",
+    "main.d628a761.css.map": "/static/css/main.d628a761.css.map",
+    "main.eb82ddd3.js.map": "/static/js/main.eb82ddd3.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8140e946.css",
-    "static/js/main.23d35ee8.js"
+    "static/css/main.d628a761.css",
+    "static/js/main.eb82ddd3.js"
   ]
 }
